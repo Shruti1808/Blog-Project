@@ -5,5 +5,6 @@ export default DS.Model.extend({
   image: DS.attr(),
   title: DS.attr(),
   description: DS.attr(),
-  date: DS.attr()
+  date: DS.attr(),
+  timestamp: DS.attr('number'),
 });
