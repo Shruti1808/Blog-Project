@@ -14,10 +14,7 @@ export default Ember.Route.extend({
       post.save();
       this.transitionTo('dashboard');
     },
-    destroyPost(post) {
-      post.destroyRecord();
-      this.transitionTo('dashboard');
-    },
+
 
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
@@ -27,6 +24,21 @@ export default Ember.Route.extend({
         return post.save();
       });
       this.transitionTo('post', post);
-    }
+    },
+
+    destroyReview(review) {
+      review.destroyRecord();
+      this.transitionTo('dashboard');
+    },
+
+    destroyPost(post) {
+      var review_deletions = post.get('reviews').map(function(review) {
+        return review.destroyRecord();
+      });
+      Ember.RSVP.all(review_deletions).then(function() {
+        return post.destroyRecord();
+      });
+      this.transitionTo('dashboard');
+    },
   }
 });
