@@ -7,4 +7,5 @@ export default DS.Model.extend({
   description: DS.attr(),
   date: DS.attr('date'),
   timestamp: DS.attr('number'),
+  reviews: DS.hasMany('review', { async: true })
 });

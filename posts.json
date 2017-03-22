@@ -28,5 +28,12 @@
     "title": "My Reaction",
     "description": "How I feel at work when my boss asks me to do something",
     "date": "01-27-2017"
+  }],
+  "reviews": [{
+    "author": "Andrea",
+    "content": "This is my favorite place"
+  }, {
+    "author": "Alex",
+    "content": "Cool posts!"
   }]
 }
