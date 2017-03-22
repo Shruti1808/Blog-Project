@@ -2,9 +2,9 @@
 {{#link-to 'about'}}About{{/link-to}}
 
 <h1> Welcome to Your DashBoard</h1>
-<ul>
+<div class="row">
   {{#each model.posts as |post|}}
     {{post-tile post=post}}
   {{/each}}
-</ul>
+</div>
 {{new-post savePost2="savePost3"}}

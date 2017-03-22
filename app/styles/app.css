@@ -6,3 +6,28 @@
 .nav {
   height: 70px;
 }
+
+.thumbnail {
+   text-align: center;
+ }
+
+.img-holder {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.img-holder img {
+  max-width: 100%;
+}
+
+.price-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+}
+
+.caption {
+  text-align: left;
+}
