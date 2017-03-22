@@ -7,12 +7,13 @@ export default Ember.Component.extend({
       this.set('addNewReview', true);
     },
     saveReview() {
-     var params = {
-       author: this.get('author'),
-       content: this.get('content')
-     };
-     this.set('addNewReview', false);
-     this.sendAction('saveReview', params);
-   }
+      var params = {
+        author: this.get('author'),
+        content: this.get('content'),
+        post: this.get('post')
+      };
+      this.set('addNewReview', false);
+      this.sendAction('saveReview', params);
+    }
   }
 });

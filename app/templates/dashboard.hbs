@@ -3,21 +3,8 @@
 
 <h1> Welcome to Your DashBoard</h1>
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-tile post=post}}
   {{/each}}
 </ul>
 {{new-post savePost2="savePost3"}}
-
-
-
-
-<h2> All Reviews </h2>
-
-<ul>
-  {{#each model.reviews as |review|}}
-    <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
-  {{/each}}
-</ul>
-
-{{new-review saveReview="saveReview"}}

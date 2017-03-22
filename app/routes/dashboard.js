@@ -11,10 +11,10 @@ export default Ember.Route.extend({
   // model(){
   //   return this.store.findAll('post').then(results => results.sortBy('date').reverse());
   // },
-
+  //
   // model(){
-  //   this.store.findAll('post').then(function(posts) {
-  //     return posts.({filter: {title: 'Bridal'}});
+  //   this.store.query('post', {orderBy: 'title', equalTo: 'Bridal hairstyle'}).then(function(posts){
+  //     return posts;
   //   });
   // },
 
@@ -24,10 +24,5 @@ export default Ember.Route.extend({
         newPost.save();
         this.transitionTo('dashboard');
       },
-        saveReview(params) {
-      var newReview = this.store.createRecord('review', params);
-      newReview.save();
-      this.transitionTo('dashboard');
-    }
   }
 });
