@@ -1,2 +1,10 @@
 {{#link-to 'contact'}}Contact Us{{/link-to}}
 {{#link-to 'about'}}About{{/link-to}}
+
+<h1> Welcome to Your DashBoard</h1>
+<ul>
+  {{#each model as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</ul>
+{{new-post savePost2="savePost3"}}

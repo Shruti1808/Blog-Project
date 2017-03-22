@@ -1,0 +1,32 @@
+{ "posts": [{
+    "author": "Keely Glenn",
+    "image": "https://media.giphy.com/media/l4lRteGLr5FGI6rXW/giphy.gif",
+    "title": "RiRi for Prez",
+    "description": "Rihanna should be president",
+    "date": "03-22-2017"
+  }, {
+    "author": "Shruti Priya",
+    "image": "https://s-media-cache-ak0.pinimg.com/564x/13/ad/cc/13adcc290fc080f9eb23a2d9cfaf117b.jpg",
+    "title": "Bridal hairstyle",
+    "description": "65 Long hair and Bridal Hairstyles",
+    "date": "02-15-2017"
+  }, {
+    "author": "Johnny Good",
+    "image": "https://s-media-cache-ak0.pinimg.com/564x/88/0d/8b/880d8bc345ba8283c779538912a0dab4.jpg",
+    "title": "Food Lover",
+    "description": "One of the easiest way to eat clean is to mix a bunch of vegetables in a bowl with your favorite dressing and serve it for any meal of the day. Whether you serve yours hot, cold, sweet, or savory,...",
+    "date": "03-17-2017"
+  }, {
+    "author": "Veruca Salt",
+    "image": "https://s-media-cache-ak0.pinimg.com/564x/d1/e2/25/d1e225a6ca54882b40bbcd4c5dbc60a1.jpg",
+    "title": "Palm Drive La",
+    "description": "Palm tree lined street to drive around on in the Los Angeles area",
+    "date": "03-20-2017"
+  }, {
+    "author": "Veronica Salty",
+    "image": "https://media.giphy.com/media/fpXxIjftmkk9y/giphy.gif",
+    "title": "My Reaction",
+    "description": "How I feel at work when my boss asks me to do something",
+    "date": "01-27-2017"
+  }]
+}
