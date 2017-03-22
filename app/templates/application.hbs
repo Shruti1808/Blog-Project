@@ -1,2 +1,22 @@
+<div class="container">
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="pull-left">{{#link-to 'dashboard'}}Dashboard{{/link-to}}</li>
 
-{{outlet}}
+          <a class="navbar-brand" href="#">
+            <img id="logo" alt="Brand" src="/assests/images/blog.png">
+          </a>
+          <li class="pull-right">{{#link-to 'about'}}About{{/link-to}}</li>
+          <li class="pull-right">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </header>
+
+  {{outlet}}
+</div>
