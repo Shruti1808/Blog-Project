@@ -9,25 +9,19 @@
 
 .thumbnail {
    text-align: center;
+   width: 100%;
+   overflow: auto;
+   height: 600px;
+   padding: 10px;
  }
-
-.img-holder {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-
-.img-holder img {
-  max-width: 100%;
-}
-
-.price-container {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: red;
-}
 
 .caption {
   text-align: left;
+  max-height: 236px;
+}
+
+.image img{
+  height: 400px;
+  width: 100%;
+  position: relative;
 }
