@@ -10,8 +10,17 @@
       <h5>Edit</h5>
     </div>
     <div class="panel-body">
-      {{update-post post=model update="update"}}<br>
-      {{new-review saveReview="saveReview" post=model}}
+      <div class="row" id="edit-scroll">
+        <div class="col-md-1" id="update-button">
+          {{update-post post=model update="update"}}<br>
+
+        </div>
+        <div class="col-md-1" id="new-comment-button">
+          {{new-review saveReview="saveReview" post=model}}
+
+        </div>
+      </div>
+
     </div>
   </div>
 

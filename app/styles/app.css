@@ -91,12 +91,30 @@
 }
 
 .comment {
-  margin-top: 200px;
   margin-left: -100px;
-    padding-right: 100px;
+  padding-right: 100px;
+}
+
+.comment .panel-body {
+  max-height: 300px;
+  overflow: auto;
 }
 
 .edit {
-  margin-top: -900px;
+  margin-top: -250px;
+}
 
+.tag {
+  margin-top: 30px;
+  margin-left: -90px;
+    padding-right: 110px;
+}
+
+#new-comment-button {
+  margin-left: 200px;
+}
+
+#edit-scroll {
+  max-height: 200px;
+  overflow: auto;
 }
