@@ -25,3 +25,13 @@
   width: 100%;
   position: relative;
 }
+
+.getStarted form{
+  text-align: center;
+  margin-left: 200px;
+}
+
+.signInForms{
+  margin: 10px;
+  margin-top: 70px;
+}
