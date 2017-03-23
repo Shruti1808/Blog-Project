@@ -1,14 +1,29 @@
 <div class="details">
-  <h3>{{post.title}}</h3>
-  <h4>{{post.description}}</h4>
-  <h5>By: {{post.author}}</h5>
-  <h5>Posted on: {{post.date}}</h5>
-</div>
+  <div class="thumbnail detail-thumbnail">
+    <div id="image-detail">
+      <img src="{{post.image}}" alt="image-post" />
+    </div>
+    <div id="caption-detail">
+      <h3>{{post.title}}</h3>
+      <h4>{{post.description}}</h4>
+      <h5>By: {{post.author}}</h5>
+      <h5>Posted on: {{post.date}}</h5>
+    </div>
+    <div class="review panel-default">
+      <div class="panel-heading">
+        <h5>Comments</h5>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {{#each post.reviews as |review|}}
+          {{review-tile review=review destroyReview="destroyReview"}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<h2> Reviews </h2>
-<ul>
-  {{#each post.reviews as |review|}}
-    {{review-tile review=review destroyReview="destroyReview"}}
-  {{/each}}
-</ul>
-<button {{action 'delete' post}}>Delete</button>
+
+  <button {{action 'delete' post}}>Delete</button>
+
+</div>
