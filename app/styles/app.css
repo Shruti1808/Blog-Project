@@ -61,15 +61,21 @@
 
 .smallArticles {
   text-align: center;
-  margin-top: 200px;
-  background-color: #eaecef;
+  margin-top: 100px;
 }
-
 
 .thumbnail-image {
   max-height: 600px;
   align-items: center;
   display: block;
+  /*margin-left: 30px;*/
+}
+.featured-body img{
+  width: 300px;
+  height: 400px;
+  padding-right: 20px ;
+  padding-left: 20px;
+  align-items: center;
 }
 
 #feature-title {
@@ -78,12 +84,12 @@
 }
 .featured-body{
   margin-top: 20px;
+  margin-left: 100px;
 }
 
 .detail-thumbnail{
   width: 600px;
   text-align: center;
-
 }
 
 #new-comment {
@@ -111,10 +117,12 @@
 }
 
 #new-comment-button {
-  margin-left: 200px;
+  margin-left: 100px;
+}
+#new-tag-button {
+  margin-left: 100px;
 }
 
-#edit-scroll {
-  max-height: 200px;
-  overflow: auto;
+.forms {
+  margin-left: 30px;
 }

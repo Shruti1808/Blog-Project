@@ -1,7 +1,7 @@
 {{#if addNewTag}}
-<h1>New Tag</h1>
+<h5>New Tag</h5>
 <div>
-  <form>
+  <form class="form">
     <div class="form-group">
       <label for="name">Tag Name</label>
       {{input value=name id="name"}}
@@ -10,5 +10,5 @@
     </form>
   </div>
   {{else}}
-  <button{{action 'tagFormShow'}}>New Tag</button>
+  <button{{action 'tagFormShow'}}>Tag</button>
   {{/if}}
