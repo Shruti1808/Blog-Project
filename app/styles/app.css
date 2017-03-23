@@ -81,10 +81,22 @@
 }
 
 .detail-thumbnail{
-  align-items: center;
-  margin-left: 20px;
-}
-.details{
   width: 600px;
-  align-items: center;
+  text-align: center;
+
+}
+
+#new-comment {
+  float: left;
+}
+
+.comment {
+  margin-top: 200px;
+  margin-left: -100px;
+    padding-right: 100px;
+}
+
+.edit {
+  margin-top: -900px;
+
 }

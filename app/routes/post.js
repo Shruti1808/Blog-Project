@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
   model(params){
     return this.store.findRecord('post', params.post_id);
   },
@@ -14,7 +15,6 @@ export default Ember.Route.extend({
       post.save();
       this.transitionTo('dashboard');
     },
-
 
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
@@ -40,5 +40,6 @@ export default Ember.Route.extend({
       });
       this.transitionTo('dashboard');
     },
+
   }
 });

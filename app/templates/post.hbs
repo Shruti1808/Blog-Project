@@ -1,6 +1,18 @@
-
 {{post-detail post=model destroyPost="destroyPost" destroyReview="destroyReview"}}
 
-{{update-post post=model update="update"}}
+<div class="row">
+  <div class="col-md-7">
 
-{{new-review saveReview="saveReview" post=model}}
+  </div>
+
+  <div class="col-md-4 edit panel-default">
+    <div class="panel-heading">
+      <h5>Edit</h5>
+    </div>
+    <div class="panel-body">
+      {{update-post post=model update="update"}}<br>
+      {{new-review saveReview="saveReview" post=model}}
+    </div>
+  </div>
+
+</div>
