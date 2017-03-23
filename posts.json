@@ -35,5 +35,10 @@
   }, {
     "author": "Alex",
     "content": "Cool posts"
+  }],
+  "tags": [{
+    "name": "travel"
+  }, {
+    "name": "beauty"
   }]
 }

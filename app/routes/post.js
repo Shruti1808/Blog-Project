@@ -26,6 +26,16 @@ export default Ember.Route.extend({
       this.transitionTo('post', post);
     },
 
+    saveTag(params) {
+      var newTag = this.store.createRecord('tag', params);
+      var post = params.post;
+      post.get('tag').addObject(newTag);
+      newTag.save().then(function(){
+        return post.save();
+      });
+      this.transitionTo('post', post);
+    },
+
     destroyReview(review) {
       review.destroyRecord();
       this.transitionTo('dashboard');

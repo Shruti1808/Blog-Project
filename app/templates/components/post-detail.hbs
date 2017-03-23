@@ -33,10 +33,13 @@
         <div class="tag panel-default">
           <div class="panel-heading">
             <h5>Tags</h5>
+
           </div>
           <div class="panel-body">
             <ul>
-
+              {{#each post.tags as |tag|}}
+                {{tag-tile tag=tag}}
+              {{/each}}
             </ul>
           </div>
       </div>
